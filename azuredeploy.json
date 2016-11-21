@@ -134,21 +134,21 @@
       "metadata": {
         "description": "Virtual Machine name prefix for Domain Controllers"
       },
-      "defaultValue": "DC"
+      "defaultValue": "DC-Azure0"
     },
     "adfsVmNamePrefix": {
       "type": "string",
       "metadata": {
         "description": "Virtual Machine name prefix for ADFS servers"
       },
-      "defaultValue": "ADFS"
+      "defaultValue": "ADFS0"
     },
     "wapVmNamePrefix": {
       "type": "string",
       "metadata": {
         "description": "Virtual Machine name prefix for WAP servers"
       },
-      "defaultValue": "WAP"
+      "defaultValue": "WAP0"
     },
     "addcVMsSize": {
       "type": "string",
