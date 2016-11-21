@@ -26,7 +26,7 @@
   },
   "resources": [
     {
-      "comments": "DC01 NIC",
+      "comments": "DC-Azure01 NIC",
       "name": "[parameters('nicNames')[0]]",
       "type": "Microsoft.Network/networkInterfaces",
       "location": "[parameters('location')]",
@@ -47,7 +47,7 @@
       }
     },
     {
-      "comments": "DC02 NIC",
+      "comments": "DC-Azure02 NIC",
       "name": "[parameters('nicNames')[1]]",
       "type": "Microsoft.Network/networkInterfaces",
       "location": "[parameters('location')]",

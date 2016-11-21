@@ -85,49 +85,49 @@
       "metadata": {
         "description": "The internal IP address of the first Domain Controller, this IP address will be statically assigned to the DC and must be a valid ip address within the Internal subnet."
       },
-      "defaultValue": "10.20.0.1"
+      "defaultValue": "10.20.0.101"
     },
     "addc02NicIPAddress": {
       "type": "string",
       "metadata": {
         "description": "The internal IP address of the second Domain Controller, this IP address will be statically assigned to the DC and must be a valid ip address within the Internal subnet."
       },
-      "defaultValue": "10.20.0.2"
+      "defaultValue": "10.20.0.102"
     },
     "adfs01NicIPAddress": {
       "type": "string",
       "metadata": {
         "description": "The internal IP address of the first ADFS server, this IP address will be statically assigned to the ADFS server and must be a valid ip address within the Internal subnet."
       },
-      "defaultValue": "10.20.0.11"
+      "defaultValue": "10.20.0.111"
     },
     "adfs02NicIPAddress": {
       "type": "string",
       "metadata": {
         "description": "The internal IP address of the second ADFS server, this IP address will be statically assigned to the ADFS server and must be a valid ip address within the Internal subnet."
       },
-      "defaultValue": "10.20.0.12"
+      "defaultValue": "10.20.0.112"
     },
     "wap01NicIPAddress": {
       "type": "string",
       "metadata": {
         "description": "The internal IP address of the first WAP server, this IP address will be statically assigned to the WAP server and must be a valid ip address within the DMZ subnet."
       },
-      "defaultValue": "10.20.250.1"
+      "defaultValue": "10.20.250.101"
     },
     "wap02NicIPAddress": {
       "type": "string",
       "metadata": {
         "description": "The internal IP address of the second WAP server, this IP address will be statically assigned to the WAP server and must be a valid ip address within the DMZ subnet."
       },
-      "defaultValue": "10.20.250.2"
+      "defaultValue": "10.20.250.102"
     },
     "adfsLoadBalancerPrivateIpAddress": {
       "type": "string",
       "metadata": {
         "description": "The internal IP address of the ADFS load balancer, this IP address will be statically assigned to the load balancer and must be a valid ip address within the Internal subnet."
       },
-      "defaultValue": "10.20.0.10"
+      "defaultValue": "10.20.0.110"
     },
     "addcVmNamePrefix": {
       "type": "string",
@@ -155,7 +155,7 @@
       "metadata": {
         "description": "The vm size of the Domain Controllers"
       },
-      "defaultValue": "Standard_DS2_V2"
+      "defaultValue": "Standard_DS1_V2"
     },
     "adfsVMsSize": {
       "type": "string",
@@ -169,7 +169,7 @@
       "metadata": {
         "description": "The vm size of the WAP servers"
       },
-      "defaultValue": "Standard_DS2_v2"
+      "defaultValue": "Standard_DS1_V2"
     },
     "adminUsername": {
       "type": "string",
@@ -215,7 +215,7 @@
         "properties": {
           "addressPrefix": "[parameters('dmzSubnetAddressRange')]",
           "networkSecurityGroup": {
-            "id": "[resourceId('Microsoft.Network/networkSecurityGroups','DMZ-sn-nsg')]"
+            "id": "[resourceId('Microsoft.Network/networkSecurityGroups','DMZ-NSG')]"
           }
         }
       }
