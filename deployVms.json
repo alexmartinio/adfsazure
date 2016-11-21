@@ -53,7 +53,7 @@
           "imageReference": {
             "publisher": "MicrosoftWindowsServer",
             "offer": "WindowsServer",
-            "sku": "2016-Datacenter-Core",
+            "sku": "2016-Datacenter-Server-Core",
             "version": "latest"
           },
           "osDisk": {
