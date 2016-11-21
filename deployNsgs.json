@@ -78,7 +78,7 @@
         },
         {
             "comments": "DMZ NSG",
-            "name": "DMZ-sn-nsg",
+            "name": "DMZ-NSG",
             "apiVersion": "2015-06-15",
             "type": "Microsoft.Network/networkSecurityGroups",
             "location": "[parameters('location')]",
