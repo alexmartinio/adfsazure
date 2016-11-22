@@ -206,7 +206,7 @@
         "properties": {
           "addressPrefix": "[parameters('internalSubnetAddressRange')]",
           "networkSecurityGroup": {
-            "id": "[resourceId('Microsoft.Network/networkSecurityGroups','Internal-sn-nsg')]"
+            "id": "[resourceId('Microsoft.Network/networkSecurityGroups','Internal-NSG')]"
           }
         }
       },
